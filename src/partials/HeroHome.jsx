@@ -1,10 +1,22 @@
-import React, { useState } from 'react';
-import Modal from '../utils/Modal';
-import { Link } from 'react-router-dom';
-import HeroImage from '../images/favicon.png';
+import React, { useState } from "react";
+import Modal from "../utils/Modal";
+import { Link } from "react-router-dom";
+import HeroImage from "../images/favicon.png";
+import YouTube from "react-youtube";
+import { GrCheckmark } from "react-icons/gr";
 
 function HeroHome() {
   const [videoModalOpen, setVideoModalOpen] = useState(false);
+  const videoId = "K9Z9t2IJL_M";
+  const opts = {
+    width: "500",
+    height: "280",
+  };
+
+  const opts1 = {
+    width: "325",
+    height: "220",
+  };
 
   return (
     <section>
@@ -16,11 +28,25 @@ function HeroHome() {
           data-aos="fade-up"
           data-aos-delay="400"
         >
-          <svg className="max-w-full" width="564" height="552" viewBox="0 0 564 552" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg
+            className="max-w-full"
+            width="564"
+            height="552"
+            viewBox="0 0 564 552"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
             <defs>
-              <linearGradient id="illustration-02" x1="-3.766" y1="300.204" x2="284.352" y2="577.921" gradientUnits="userSpaceOnUse">
-                <stop stopColor="#704094" stopOpacity=".01" />
-                <stop offset="1" stopColor="#704094" stopOpacity=".32" />
+              <linearGradient
+                id="illustration-02"
+                x1="-3.766"
+                y1="300.204"
+                x2="284.352"
+                y2="577.921"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stopColor="#4A95CF" stopOpacity=".01" />
+                <stop offset="1" stopColor="#4A95CF" stopOpacity=".32" />
               </linearGradient>
             </defs>
             <path
@@ -33,38 +59,78 @@ function HeroHome() {
         </div>
 
         {/* Hero content */}
-        <div className="relative flex justify-center items-center pt-32 pb-10 md:pt-40 md:pb-16">
+        <div className="relative flex justify-center items-center pt-10 pb-10 md:pt-40 md:pb-16">
           {/* Section header */}
-          <div className="max-w-2xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h1 mb-4" data-aos="fade-up">
-              Ravox Staking
-            </h1>
-            <p className="text-xl text-gray-400 mb-8 text-align-center " data-aos="fade-up" data-aos-delay="200">
-            Ravox is designed to revolutionize the industry with a unique staking utility. Our token is 
-            based on a proof-of-stake consensus mechanism that allows users to stake their tokens to secure the network and earn rewards.
+          <div className="max-w-2xl mx-auto text-start pb-12 md:pb-16 pr-20 pt-20">
+            <p
+              className="text-xl text-gray-400 mb-8 text-align-center "
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div
+                style={{
+                  color: "#4A95CF",
+                  fontWeight: "bold",
+                  fontSize: "25px",
+                  textTransform: "uppercase",
+                }}
+              >
+                We use <span style={{ color: "black" }}>AI</span> to study and
+                immitate the algorithm behind the{" "}
+                <span style={{ color: "red" }}>49</span>
+                <span style={{ color: "green" }}>ja</span> Color games and with
+                proper timing the software is able to predict a perfect 1.65 odd
+                game just once a day.
+              </div>
+              <h4
+                style={{
+                  color: "black",
+                  fontWeight: "bold",
+                  paddingTop: "15px",
+                }}
+              >
+                For Just N30,000 Registration & 30% of your Profit In a Month
+                You'll Receive:
+              </h4>
+              <h6
+                style={{
+                  display: "flex",
+                  justifyContent: "start",
+                  alignItems: "center",
+                  paddingTop: "10px",
+                  color: "black",
+                }}
+              >
+                {" "}
+                <GrCheckmark fontSize="16px" /> &nbsp; 100% Daily Predictions on
+                49ja
+              </h6>
             </p>
             <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
-             <Link to="/staking"> <div data-aos="fade-up" data-aos-delay="400">
-                <a className="btn text-white bg-purple-600 hover:bg-purple-1000 w-full mb-4 sm:w-auto sm:mb-0" href="#0">
-                  Stake Now
-                </a>
-              </div></Link>
-                <div data-aos="fade-up" data-aos-delay="600">
-                <a className="btn text-white bg-gray-700 hover:bg-gray-800 w-full sm:w-auto sm:ml-4" href="https://app.uniswap.org/#/swap">
-                  Buy Now
-                </a>
-              </div>
+              <Link>
+                {" "}
+                <div data-aos="fade-up" data-aos-delay="400">
+                  <a
+                    className="btn text-white bg-purple-600 hover:bg-gray-200 w-full mb-4 sm:w-auto sm:mb-0"
+                    href="#0"
+                  >
+                    Get Started
+                  </a>
+                </div>
+              </Link>
             </div>
           </div>
 
           {/* Hero image */}
           <div>
-             <div className="relative flex justify-center items-center" data-aos="fade-up" data-aos-delay="200">
-              <img className="mx-auto" src={HeroImage} width="800" height="500" alt="Hero" />
-      
-            </div> 
-
-           
+            <div
+              className="relative flex justify-center items-center"
+              data-aos="fade-up"
+              data-aos-delay="200"
+              style={{ border: "10px solid #4A95CF", borderRadius: "6px" }}
+            >
+              <YouTube videoId={videoId} opts={opts} />
+            </div>
           </div>
         </div>
       </div>
@@ -76,9 +142,23 @@ function HeroHome() {
           data-aos="fade-up"
           data-aos-delay="400"
         >
-          <svg className="max-w-full" width="564" height="552" viewBox="0 0 564 552" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg
+            className="max-w-full"
+            width="564"
+            height="552"
+            viewBox="0 0 564 552"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
             <defs>
-              <linearGradient id="illustration-02" x1="-3.766" y1="300.204" x2="284.352" y2="577.921" gradientUnits="userSpaceOnUse">
+              <linearGradient
+                id="illustration-02"
+                x1="-3.766"
+                y1="300.204"
+                x2="284.352"
+                y2="577.921"
+                gradientUnits="userSpaceOnUse"
+              >
                 <stop stopColor="#704094" stopOpacity=".01" />
                 <stop offset="1" stopColor="#704094" stopOpacity=".32" />
               </linearGradient>
@@ -95,36 +175,78 @@ function HeroHome() {
         {/* Hero content */}
         <div className="relative  justify-center items-center pt-32 pb-10 md:pt-40 md:pb-16">
           {/* Section header */}
-          
 
           {/* Hero image */}
-          <div>
-             <div className="relative flex justify-center items-center" data-aos="fade-up" data-aos-delay="200">
-              <img className="mx-auto" src={HeroImage} width="800" height="500" alt="Hero" />
-      
-            </div> 
 
-           
-          </div>
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h1 mb-4" data-aos="fade-up">
-              Ravox 
-            </h1>
-            <p className="text-xl1 text-gray-400 mb-8 text-align-center" data-aos="fade-up" data-aos-delay="200">
-            Ravox is designed to revolutionize the industry with a unique staking utility. Our token is 
-            based on a proof-of-stake consensus mechanism that allows users to stake their tokens to secure the network and earn rewards.
+            <div
+              className="relative flex justify-center items-center"
+              data-aos="fade-up"
+              data-aos-delay="200"
+              style={{ border: "10px solid #4A95CF", borderRadius: "6px" }}
+            >
+              <YouTube videoId={videoId} opts={opts1} />
+            </div>
+
+            <p
+              className="text-xl1 text-gray-400 mb-8 text-align-center"
+              data-aos="fade-up"
+              data-aos-delay="200"
+              style={{
+                paddingTop: "30px",
+              }}
+            >
+              <div
+                style={{
+                  color: "#4A95CF",
+                  fontWeight: "bold",
+                  fontSize: "25px",
+                  textTransform: "uppercase",
+                }}
+              >
+                We use <span style={{ color: "black" }}>AI</span> to study and
+                immitate the algorithm behind the{" "}
+                <span style={{ color: "red" }}>49</span>
+                <span style={{ color: "green" }}>ja</span> Color games and with
+                proper timing the software is able to predict a perfect 1.65 odd
+                game just once a day.
+              </div>
+              <h4
+                style={{
+                  color: "black",
+                  fontWeight: "bold",
+                  paddingTop: "30px",
+                }}
+              >
+                For Just N30,000 Registration & 30% of your Profit In a Month
+                You'll Receive:
+              </h4>
+              <h6
+                style={{
+                  display: "flex",
+                  justifyContent: "start",
+                  alignItems: "center",
+                  paddingTop: "10px",
+                  color: "black",
+                }}
+              >
+                {" "}
+                <GrCheckmark fontSize="16px" /> &nbsp; 100% Daily Predictions on
+                49ja
+              </h6>
             </p>
             <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
-            <Link to="/staking"> <div data-aos="fade-up" data-aos-delay="400">
-                <a className="btn text-white bg-purple-600 hover:bg-purple-white hover:text-purple-600  w-full mb-4 sm:w-auto sm:mb-0" href="#0">
-                  Stake Now
-                </a>
-              </div></Link>
-              <div data-aos="fade-up" data-aos-delay="600">
-                <a className="btn text-white bg-gray-700 hover:bg-gray-800 w-full sm:w-auto sm:ml-4" href="https://app.uniswap.org/#/swap">
-                  Buy Now
-                </a>
-              </div>
+              <Link>
+                {" "}
+                <div data-aos="fade-up" data-aos-delay="400">
+                  <a
+                    className="btn text-white bg-purple-600 hover:bg-gray-200 w-full mb-4 sm:w-auto sm:mb-0"
+                    href="#0"
+                  >
+                    Get Started
+                  </a>
+                </div>
+              </Link>
             </div>
           </div>
         </div>

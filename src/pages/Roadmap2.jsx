@@ -11,23 +11,25 @@ import Newsletter from "../partials/Newsletter";
 
 import Footer from "../partials/Footer";
 
-function Roadmap({handleOpenLoginModal}) {
+function Roadmap2() {
   return (
     <div
       className="flex flex-col min-h-screen overflow-hidden"
       style={{
         backgroundColor: "white",
+        border: "none",
       }}
     >
-      {/*  Site header */}
-      <Header handleOpenLoginModal={handleOpenLoginModal} />
-
       {/*  Page content */}
       <main className="grow">
         {/*  Page illustration */}
         <div
           className="relative max-w-6xl mx-auto h-0 pointer-events-none"
           aria-hidden="true"
+          style={{
+            backgroundColor: "white",
+            border: "none",
+          }}
         >
           <PageIllustration />
         </div>
@@ -37,13 +39,13 @@ function Roadmap({handleOpenLoginModal}) {
 
         {/* <FeaturesBlocks2 /> */}
 
-        <Newsletter />
+    
       </main>
 
       {/*  Site footer */}
-      <Footer />
+                                                                                                            
     </div>
   );
 }
 
-export default Roadmap;
+export default Roadmap2;

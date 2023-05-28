@@ -1,40 +1,46 @@
-import React from 'react';
+import React from "react";
 
-import Header from '../partials/Header';
-import PageIllustration from '../partials/PageIllustration';
-import HeroHome from '../partials/HeroHome';
-import Features from '../partials/Features';
-import FeaturesZigZag from '../partials/FeaturesZigzag';
+import Header from "../partials/Header";
+import PageIllustration from "../partials/PageIllustration";
+import HeroHome from "../partials/HeroHome";
+import Features from "../partials/Features";
+import FeaturesZigZag from "../partials/FeaturesZigzag";
+import Roadmap2 from "./Roadmap2";
+import Newsletter from "../partials/Newsletter";
 
-import Newsletter from '../partials/Newsletter';
+import Footer from "../partials/Footer";
 
-import Footer from '../partials/Footer';
-
-function Home() {
+function Home({ handleOpenLoginModal }) {
   return (
-    <div className="flex flex-col min-h-screen overflow-hidden">
+    <div
+      className="flex flex-col min-h-screen overflow-hidden "
+      style={{
+        backgroundColor: "white",
+      }}
+    >
       {/*  Site header */}
-      <Header />
+      <Header handleOpenLoginModal={handleOpenLoginModal} />
 
       {/*  Page content */}
       <main className="grow">
         {/*  Page illustration */}
-        <div className="relative max-w-6xl mx-auto h-0 pointer-events-none" aria-hidden="true">
+        <div
+          className="relative max-w-8xl mx-auto h-0 pointer-events-none"
+          aria-hidden="true"
+        >
           <PageIllustration />
         </div>
 
         {/*  Page sections */}
-         <HeroHome />
-         <Features /> 
+        <HeroHome />
+
         {/* <FeaturesZigZag />  */}
-      
-        <Newsletter />  
+        <Roadmap2 />
+        <Newsletter />
       </main>
 
-
-
       {/*  Site footer */}
-      <Footer />  
+      <Footer />
     </div>
   );
 }

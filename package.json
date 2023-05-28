@@ -10,6 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.13.2",
     "@react-icons/all-files": "^4.1.0",
     "@tailwindcss/forms": "^0.5.3",
     "@walletconnect/client": "^1.8.0",
@@ -26,6 +29,8 @@
     "react-icons": "^4.8.0",
     "react-router-dom": "^6.8.1",
     "react-transition-group": "^4.4.5",
+    "react-youtube": "^10.1.0",
+    "styled-components": "^5.3.11",
     "wagmi": "^0.12.1",
     "web3": "^1.8.2"
   },

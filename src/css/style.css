@@ -22,3 +22,6 @@
 [x-cloak=""] {
     display: none;
 }
+.signin:hover {
+background-color: #7FB2DF;
+}
