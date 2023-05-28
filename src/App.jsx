@@ -12,7 +12,7 @@ import SignUp from "./pages/SignUp";
 import Staking from "./pages/staking";
 import "./App.css";
 import Roadmap from "./pages/Roadmap";
-import { ImWhatsapp } from "react-icons/IM";
+
 import LoginModal from "./partials/LoginModal";
 
 function App() {
@@ -72,8 +72,14 @@ function App() {
       />
       <Route path="/signin" element={<SignIn />} />
       <Route path="/signup" element={<SignUp />} />
-      <Route path="/Communities" element={<Staking handleOpenLoginModal={handleOpenLoginModal} />} />
-      <Route path="/Activities" element={<Roadmap handleOpenLoginModal={handleOpenLoginModal} />} />
+      <Route
+        path="/Communities"
+        element={<Staking handleOpenLoginModal={handleOpenLoginModal} />}
+      />
+      <Route
+        path="/Activities"
+        element={<Roadmap handleOpenLoginModal={handleOpenLoginModal} />}
+      />
     </Routes>
   ) : (
     <div className="login-page">
@@ -118,7 +124,7 @@ function App() {
             }}
           >
             {" "}
-            <ImWhatsapp /> &nbsp; +2348101530401
+             +2348101530401
           </div>
         </h5>
         {display}
