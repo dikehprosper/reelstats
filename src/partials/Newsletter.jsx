@@ -85,6 +85,7 @@ function Newsletter() {
             <form className="w-full lg:w-1/2">
               <div className="flex flex-col sm:flex-row justify-center max-w-xs mx-auto sm:max-w-md lg:max-w-none">
                 <a
+                  href="https://www.youtube.com/@daily_profits_off_49ja/videos"
                   className="btn text-purple-600 bg-purple-100 hover:bg-white shadow"
                   style={{
                     cursor: "pointer",
@@ -97,6 +98,7 @@ function Newsletter() {
                 </a>{" "}
                 &nbsp; &nbsp;
                 <a
+                  href="http://t.me/ReelStats"
                   className="btn text-purple-600 bg-purple-100 hover:bg-white shadow"
                   style={{
                     cursor: "pointer",
@@ -109,6 +111,7 @@ function Newsletter() {
                 </a>{" "}
                 &nbsp; &nbsp;
                 <a
+                  href="https://wa.me/message/JX5AW3WWZVPBI1"
                   className="btn text-purple-600 bg-purple-100 hover:bg-white shadow"
                   style={{
                     cursor: "pointer",
