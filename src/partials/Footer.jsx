@@ -18,7 +18,7 @@ function Footer() {
              
               <li className="ml-4">
                 <Link
-                  to="https://t.me/RAVOXerc"
+                  to="http://t.me/ReelStats"
                   className="flex justify-center items-center text-purple-600  hover:text-gray-100  rounded-full transition duration-150 ease-in-out"
                   aria-label="Telegram"
                 >
