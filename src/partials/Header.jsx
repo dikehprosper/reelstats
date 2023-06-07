@@ -244,14 +244,7 @@ function Header({ handleOpenLoginModal }) {
                     Communities
                   </Link>
                 </li>
-                <li>
-                  <Link
-                    to="https://app.uniswap.org/#/swap"
-                    className="btn-sm text-pur  hover:text-purple-600 hover:bg-gray-200 px-4 py-3 flex items-center transition duration-150 ease-in-out"
-                  >
-                    Sign In/Sign Out
-                  </Link>
-                </li>
+           
               </ul>
             </nav>
           </div>

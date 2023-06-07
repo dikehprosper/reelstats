@@ -14,6 +14,7 @@ import "./App.css";
 import Roadmap from "./pages/Roadmap";
 
 import LoginModal from "./partials/LoginModal";
+import Home1 from "./Home1";
 
 function App() {
   const location = useLocation();
@@ -44,7 +45,7 @@ function App() {
       email.current.value === "reelstats@gmail.com" &&
       password.current.value === "19283746"
     ) {
-      localStorage.setItem("emailData", "fredjoshua@gmail.com");
+      localStorage.setItem("emailData", "reelstats@gmail.com");
       localStorage.setItem("passwordData", "19283746");
     }
   };
@@ -63,72 +64,78 @@ function App() {
 
   console.log(handleOpenLoginModal);
 
-  return openLoginModal ? (
-    <Routes>
-      <Route
-        exact
-        path="/"
-        element={<Home handleOpenLoginModal={handleOpenLoginModal} />}
-      />
-      <Route path="/signin" element={<SignIn />} />
-      <Route path="/signup" element={<SignUp />} />
-      <Route
-        path="/Communities"
-        element={<Staking handleOpenLoginModal={handleOpenLoginModal} />}
-      />
-      <Route
-        path="/Activities"
-        element={<Roadmap handleOpenLoginModal={handleOpenLoginModal} />}
-      />
-    </Routes>
-  ) : (
-    <div className="login-page">
-      <form className="form" onSubmit={login}>
-        <div className="inputBox inputss inputsss">
-          {" "}
-          <input
-            type="text"
-            required="required"
-            ref={email}
-            className="input"
-          />{" "}
-          <span className="spans">Email</span>{" "}
+  return (
+    <div>
+      {getEmail && getPassword ? (
+        <Home1 />
+      ) : openLoginModal ? (
+        <Routes>
+          <Route
+            exact
+            path="/"
+            element={<Home handleOpenLoginModal={handleOpenLoginModal} />}
+          />
+          <Route path="/signin" element={<SignIn />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route
+            path="/Communities"
+            element={<Staking handleOpenLoginModal={handleOpenLoginModal} />}
+          />
+          <Route
+            path="/Activities"
+            element={<Roadmap handleOpenLoginModal={handleOpenLoginModal} />}
+          />
+        </Routes>
+      ) : (
+        <div className="login-page">
+          <form className="form" onSubmit={login}>
+            <div className="inputBox inputss inputsss">
+              {" "}
+              <input
+                type="text"
+                required="required"
+                ref={email}
+                className="input"
+              />{" "}
+              <span className="spans">Email</span>{" "}
+            </div>
+            <div className="inputBox inputss">
+              {" "}
+              <input
+                type="text"
+                required="required"
+                ref={password}
+                className="input"
+              />{" "}
+              <span className="spans">Password</span>{" "}
+            </div>
+            <button class=" button login-button" style={{ fontWeight: "bold" }}>
+              Login
+            </button>
+            <h5
+              className="fp"
+              onClick={fp}
+              style={{ fontWeight: "bold", color: "black", marginTop: "25px" }}
+            >
+              Contact admin for Authentication
+              <div
+                style={{
+                  color: "",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  marginTop: "15px",
+                  fontColor: "green",
+                }}
+              >
+                {" "}
+                +2348101530401
+              </div>
+            </h5>
+            {display}
+          </form>
         </div>
-        <div className="inputBox inputss">
-          {" "}
-          <input
-            type="text"
-            required="required"
-            ref={password}
-            className="input"
-          />{" "}
-          <span className="spans">Password</span>{" "}
-        </div>
-        <button class=" button login-button" style={{ fontWeight: "bold" }}>
-          Login
-        </button>
-        <h5
-          className="fp"
-          onClick={fp}
-          style={{ fontWeight: "bold", color: "black", marginTop: "25px" }}
-        >
-          Contact admin for Authentication
-          <div
-            style={{
-              color: "",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              marginTop: "15px",
-              fontColor: "green",
-            }}
-          >
-            {" "}
-             +2348101530401
-          </div>
-        </h5>
-        {display}
-      </form>
+      )}
     </div>
   );
 }

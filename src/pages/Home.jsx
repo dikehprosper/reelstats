@@ -16,6 +16,7 @@ function Home({ handleOpenLoginModal }) {
       className="flex flex-col min-h-screen overflow-hidden "
       style={{
         backgroundColor: "white",
+        width: "100vw",
       }}
     >
       {/*  Site header */}
@@ -32,7 +33,7 @@ function Home({ handleOpenLoginModal }) {
         </div>
 
         {/*  Page sections */}
-        <HeroHome />
+        <HeroHome handleOpenLoginModal={handleOpenLoginModal} />
 
         {/* <FeaturesZigZag />  */}
         <Roadmap2 />

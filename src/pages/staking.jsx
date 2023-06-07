@@ -11,12 +11,13 @@ import Newsletter from "../partials/Newsletter";
 
 import Footer from "../partials/Footer";
 
-function Staking({handleOpenLoginModal }) {
+function Staking({ handleOpenLoginModal }) {
   return (
     <div
       className="flex flex-col min-h-screen overflow-hidden"
       style={{
         backgroundColor: "white",
+        width: "100vw",
       }}
     >
       {/*  Site header */}

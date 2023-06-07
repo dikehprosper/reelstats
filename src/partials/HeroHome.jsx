@@ -5,7 +5,7 @@ import HeroImage from "../images/favicon.png";
 import YouTube from "react-youtube";
 import { GrCheckmark } from "react-icons/gr";
 
-function HeroHome() {
+function HeroHome({ handleOpenLoginModal }) {
   const [videoModalOpen, setVideoModalOpen] = useState(false);
   const videoId = "K9Z9t2IJL_M";
   const opts = {
@@ -113,6 +113,7 @@ function HeroHome() {
                   <a
                     className="btn text-white bg-purple-600 hover:bg-gray-200 w-full mb-4 sm:w-auto sm:mb-0"
                     href="#0"
+                    onClick={handleOpenLoginModal}
                   >
                     Get Started
                   </a>
@@ -242,6 +243,7 @@ function HeroHome() {
                   <a
                     className="btn text-white bg-purple-600 hover:bg-gray-200 w-full mb-4 sm:w-auto sm:mb-0"
                     href="#0"
+                    onClick={handleOpenLoginModal}
                   >
                     Get Started
                   </a>
