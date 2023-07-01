@@ -89,7 +89,7 @@ function HeroHome({ handleOpenLoginModal }) {
                   paddingTop: "15px",
                 }}
               >
-                For Just N30,000 Registration & 30% of your Profit In a Month
+                For Just N45,000 Registration & 30% of your Profit In a Month
                 You'll Receive:
               </h4>
               <h6

@@ -5,7 +5,7 @@ import React, { useState, useEffect } from "react";
 import "./App1.css";
 import Typewriter from "typewriter-effect";
 
-function Home1() {
+function Home2() {
   const [cal, setCal] = React.useState();
   const [firstStake, setFirstStake] = React.useState();
   const [secondStake, setSecondStake] = React.useState();
@@ -18,6 +18,7 @@ function Home1() {
   const [downloads2, setDownloads2] = useState([]);
   const [instructions, setInstructions] = useState();
   const [firstElement, setFirstElement] = useState();
+  const [firstElement1, setFirstElement1] = useState();
   const [secondElement, setSecondElement] = useState([]);
   const [firstSixElement, setFirstSixElement] = useState();
   let nextElement = firstElement;
@@ -52,6 +53,7 @@ function Home1() {
     .catch(error => console.error(error)); 
   }; */
 
+  const [choice, setChoice] = useState();
   const getDownloads = async () => {
     /*setTotal([]);*/
     setData([]);
@@ -61,8 +63,9 @@ function Home1() {
     // go();
     setInstructions("... Loading");
 
-    const url = "http://localhost:5000/fetch-data";
-    fetch(url)
+    const url = "http://137.184.115.62:5000/fetch";
+    // const url = "https://puppeteer-vercel-master-eight.vercel.app/api2";
+    await fetch(url)
       .then((response) => {
         if (!response.ok) {
           throw new Error("Request failed");
@@ -71,7 +74,7 @@ function Home1() {
       })
 
       .then((data) => {
-        const ballValues = data.balls.slice(6, 12);
+        const ballValues = data.balls.slice(0, 6);
         const ballValues1 = data.statistics.slice(0, 1);
         const ballValues3 = data.balls.slice(0, 6);
         setFirstSixElement(ballValues);
@@ -90,7 +93,7 @@ function Home1() {
   };
 
   function go() {
-    if (secondElement.length < 1) {
+    if (secondElement && secondElement.length < 1) {
       return null;
     } else {
       return (
@@ -100,7 +103,7 @@ function Home1() {
               .typeString("Bet on")
               .callFunction(() => {
                 {
-                  pickRandomNumbers();
+                  //   pickRandomNumbers();
                   // findFrequentNumbers2();
                 }
               })
@@ -111,25 +114,22 @@ function Home1() {
     }
   }
 
-  const pickRandomNumbers = () => {
-    const numbers = Array.from({ length: 49 }, (_, i) => i + 1);
-    const existingNumbers = new Set(secondElement);
-    const availableNumbers = numbers.filter(
-      (number) => !existingNumbers.has(number)
-    );
-    const randomNumbers = [];
+  //   const pickRandomNumbers = () => {
+  //     const numbers = Array.from({ length: 49 }, (_, i) => i + 1);
 
-    while (randomNumbers.length < 4 && availableNumbers.length > 0) {
-      const randomIndex = Math.floor(Math.random() * availableNumbers.length);
-      const randomNumber = availableNumbers.splice(randomIndex, 1)[0];
-      if (!randomNumbers.includes(randomNumber)) {
-        randomNumbers.push(randomNumber);
-      }
-    }
+  //     const filteredNumbers = numbers.filter((number) => {
+  //       return !secondElement.includes(number);
+  //     });
 
-    // randomNumbers will now have four random numbers not found in secondElement
-    setRandomNumbers(randomNumbers);
-  };
+  //     let randomNumbers = [];
+  //     while (randomNumbers.length < 4) {
+  //       const randomIndex = Math.floor(Math.random() * filteredNumbers.length);
+  //       const randomNumber = filteredNumbers[randomIndex];
+  //       randomNumbers.push(randomNumber);
+  //       filteredNumbers.splice(randomIndex, 1);
+  //     }
+  //     setRandomNumbers(randomNumbers);
+  //   };
 
   // console.log(secondElement);
   // console.log(randomNumbers);
@@ -218,80 +218,83 @@ console.log(frequentNumbers);
             </div>{" "}
             <div className="draw">
               {/*  {instructions2} */}
-              {/* {firstElement - 1} */}
-              3752274
+              {firstElement}
             </div>
             <div className="body6">
-              {firstSixElement &&
-                firstSixElement.map((go, index) => {
+              {secondElement &&
+                secondElement.map((go, index) => {
                   let style;
                   if (
-                    go === "1" ||
-                    go === "4" ||
-                    go === "7" ||
-                    go === "10" ||
-                    go === "13" ||
-                    go === "16" ||
-                    go === "19" ||
-                    go === "22" ||
-                    go === "25" ||
-                    go === "28" ||
-                    go === "31" ||
-                    go === "34" ||
-                    go === "37" ||
-                    go === "40" ||
-                    go === "43" ||
-                    go === "46"
+                    go === 1 ||
+                    go === 4 ||
+                    go === 7 ||
+                    go === 10 ||
+                    go === 13 ||
+                    go === 16 ||
+                    go === 19 ||
+                    go === 22 ||
+                    go === 25 ||
+                    go === 28 ||
+                    go === 31 ||
+                    go === 34 ||
+                    go === 37 ||
+                    go === 40 ||
+                    go === 43 ||
+                    go === 46
                   ) {
                     style = {
                       backgroundColor: "red",
                     };
                   } else if (
-                    go === "2" ||
-                    go === "5" ||
-                    go === "8" ||
-                    go === "11" ||
-                    go === "14" ||
-                    go === "17" ||
-                    go === "20" ||
-                    go === "23" ||
-                    go === "26" ||
-                    go === "29" ||
-                    go === "32" ||
-                    go === "35" ||
-                    go === "38" ||
-                    go === "41" ||
-                    go === "44" ||
-                    go === "47"
+                    go === 2 ||
+                    go === 5 ||
+                    go === 8 ||
+                    go === 11 ||
+                    go === 14 ||
+                    go === 17 ||
+                    go === 20 ||
+                    go === 23 ||
+                    go === 26 ||
+                    go === 29 ||
+                    go === 32 ||
+                    go === 35 ||
+                    go === 38 ||
+                    go === 41 ||
+                    go === 44 ||
+                    go === 47
                   ) {
                     style = {
                       backgroundColor: "blue",
                     };
                   } else if (
-                    go === "3" ||
-                    go === "6" ||
-                    go === "9" ||
-                    go === "12" ||
-                    go === "15" ||
-                    go === "18" ||
-                    go === "21" ||
-                    go === "24" ||
-                    go === "27" ||
-                    go === "30" ||
-                    go === "33" ||
-                    go === "36" ||
-                    go === "39" ||
-                    go === "42" ||
-                    go === "45" ||
-                    go === "48"
+                    go === 3 ||
+                    go === 6 ||
+                    go === 9 ||
+                    go === 12 ||
+                    go === 15 ||
+                    go === 18 ||
+                    go === 21 ||
+                    go === 24 ||
+                    go === 27 ||
+                    go === 30 ||
+                    go === 33 ||
+                    go === 36 ||
+                    go === 39 ||
+                    go === 42 ||
+                    go === 45 ||
+                    go === 48
                   ) {
                     style = {
                       backgroundColor: "green",
                     };
-                  } else if (go === "49") {
+                  } else if (go === 49) {
                     style = {
                       backgroundColor: "#c9d916",
                       color: "black",
+                    };
+                  } else if (go === 0) {
+                    style = {
+                      display: "none",
                     };
                   }
                   return (
@@ -308,20 +311,25 @@ console.log(frequentNumbers);
             <div className="mainbody1-2">
               Upcoming Draw : &nbsp;&nbsp;&nbsp;&nbsp;
             </div>{" "}
-            <div className="draw"> {firstElement}
+            <div className="draw">
+              {" "}
+              {firstElement &&
+                firstElement.map((data) => {
+                  return data + 1;
+                })}{" "}
             </div>
           </div>
         </div>
         <button className="mainbody5" onClick={getDownloads}>
-          Click To Start
+          Start
         </button>
         <div className="mainbody1">
           {" "}
           <div className="instructions2">
             <div className="instructions3"> {go()} </div>
             <div className="instructions4">
-              {randomNumbers &&
-                randomNumbers.map((go, index) => {
+              {choice &&
+                choice.map((go, index) => {
                   let style;
                   if (
                     go === 1 ||
@@ -421,4 +429,4 @@ console.log(frequentNumbers);
   );
 }
 
-export default Home1;
+export default Home2;

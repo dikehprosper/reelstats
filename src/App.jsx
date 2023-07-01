@@ -15,6 +15,7 @@ import Roadmap from "./pages/Roadmap";
 
 import LoginModal from "./partials/LoginModal";
 import Home1 from "./Home1";
+import Home2 from "./Home2";
 
 function App() {
   const location = useLocation();
@@ -41,14 +42,29 @@ function App() {
   const [display, setDisplay] = React.useState();
 
   const login = () => {
-    if (
-      email.current.value === "reelstats@gmail.com" &&
-      password.current.value === "19283746"
-    ) {
-      localStorage.setItem("emailData", "reelstats@gmail.com");
-      localStorage.setItem("passwordData", "19283746");
+    const emailValue = email.current.value;
+    const passwordValue = password.current.value;
+
+    // Define the email and password combinations
+    const emailPasswords = [
+      { email: "reelstats@gmail.com", password: "19283746" },
+      { email: "reelstatscustomers@gmail.com", password: "password1" },
+      { email: "reelstatscustomers@gmail.com", password: "password2" },
+      // Add more email and password combinations here
+    ];
+
+    // Check if the entered email and password match any combination
+    const matchedPair = emailPasswords.find(
+      (pair) => pair.email === emailValue && pair.password === passwordValue
+    );
+
+    if (matchedPair) {
+      // Store the matched email and password in localStorage
+      localStorage.setItem("emailData", matchedPair.email);
+      localStorage.setItem("passwordData", matchedPair.password);
     }
   };
+
   function fp() {
     setDisplay(
       <Typewriter
@@ -67,7 +83,11 @@ function App() {
   return (
     <div>
       {getEmail && getPassword ? (
-        <Home1 />
+        getEmail === "reelstats@gmail.com" && getPassword === "19283746" ? (
+          <Home1 />
+        ) : (
+          <Home2 />
+        )
       ) : openLoginModal ? (
         <Routes>
           <Route
