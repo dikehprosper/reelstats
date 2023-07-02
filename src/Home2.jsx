@@ -53,47 +53,58 @@ function Home2() {
     .catch(error => console.error(error)); 
   }; */
 
-  const [choice, setChoice] = useState();
+  const [choice, setChoice] = useState([]);
   const getDownloads = async () => {
     /*setTotal([]);*/
-    setData([]);
-    setDownloads([]);
-    setDownloads2([]);
-    setDownloads3([]);
-    // go();
-    setInstructions("... Loading");
+    // setData([]);
+    // setDownloads([]);
+    // setDownloads2([]);
+    // setDownloads3([]);
+    // // go();
+    // setInstructions("... Loading");
 
-    const url = "http://137.184.115.62:5000/fetch";
-    // const url = "https://puppeteer-vercel-master-eight.vercel.app/api2";
-    await fetch(url)
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("Request failed");
-        }
-        return response.json();
-      })
+    // const url = "http://137.184.115.62:5000/fetch";
+    // // const url = "https://puppeteer-vercel-master-eight.vercel.app/api2";
+    // await fetch(url)
+    //   .then((response) => {
+    //     if (!response.ok) {
+    //       throw new Error("Request failed");
+    //     }
+    //     return response.json();
+    //   })
 
-      .then((data) => {
-        const ballValues = data.balls.slice(0, 6);
-        const ballValues1 = data.statistics.slice(0, 1);
-        const ballValues3 = data.balls.slice(0, 6);
-        setFirstSixElement(ballValues);
-        setFirstElement(ballValues1);
-        setSecondElement(ballValues3);
-        const numbersArray = ballValues3.map((value) => parseInt(value, 10));
+    //   .then((data) => {
+    //     const ballValues = data.balls.slice(0, 6);
+    //     const ballValues1 = data.statistics.slice(0, 1);
+    //     const ballValues3 = data.balls.slice(0, 6);
+    //     setFirstSixElement(ballValues);
+    //     setFirstElement(ballValues1);
+    //     setSecondElement(ballValues3);
+    //     const numbersArray = ballValues3.map((value) => parseInt(value, 10));
 
-        console.log(numbersArray);
-        console.log(randomNumbers);
+    //     console.log(numbersArray);
+    //     console.log(randomNumbers);
 
-        setDownloads();
+    //     setDownloads();
 
-        setInstructions("");
-      })
-      .catch((error) => console.error(error));
+    //     setInstructions("");
+
+    const pickedNumbers = [];
+
+    while (pickedNumbers.length < 4) {
+      const randomNumber = Math.floor(Math.random() * 49) + 1;
+      if (!pickedNumbers.includes(randomNumber)) {
+        pickedNumbers.push(randomNumber);
+      }
+    }
+
+    setChoice(pickedNumbers);
+    // })
+    // .catch((error) => console.error(error));
   };
 
   function go() {
-    if (secondElement && secondElement.length < 1) {
+    if (choice.length < 1) {
       return null;
     } else {
       return (

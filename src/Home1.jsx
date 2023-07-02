@@ -217,9 +217,9 @@ console.log(frequentNumbers);
               Last Draw : &nbsp;&nbsp;&nbsp;&nbsp;
             </div>{" "}
             <div className="draw">
-              {/*  {instructions2} */}
-              {/* {firstElement - 1} */}
-              3752274
+               {/* {instructions2}  */}
+              {firstElement - 1}
+       
             </div>
             <div className="body6">
               {firstSixElement &&
