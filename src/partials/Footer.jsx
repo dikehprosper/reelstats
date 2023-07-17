@@ -13,7 +13,7 @@ function Footer() {
               className="flex mb-4 md:order-1 md:ml-4 md:mb-0"
               style={{ display: "flex", alignItems: "center" }}
             >
-              <h2 style={{ fontWeight: "bold" }}>+2348101530401</h2>
+              <h2 style={{ fontWeight: "bold" }}>+2348101825955</h2>
               &nbsp;
              
               <li className="ml-4">

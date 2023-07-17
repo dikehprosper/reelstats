@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import HeroImage from "../images/favicon.png";
 import YouTube from "react-youtube";
 import { GrCheckmark } from "react-icons/gr";
+import { FcCancel } from "react-icons/fc";
+import Features from "./Features";
 
 function HeroHome({ handleOpenLoginModal }) {
   const [videoModalOpen, setVideoModalOpen] = useState(false);
@@ -86,11 +88,11 @@ function HeroHome({ handleOpenLoginModal }) {
                 style={{
                   color: "black",
                   fontWeight: "bold",
-                  paddingTop: "15px",
+                  paddingTop: "30px",
                 }}
               >
-                For Just N45,000 Registration & 30% of your Profit In a Month
-                You'll Receive:
+                Join our autotrade with a minimum of N30,000 Registration fee
+                and 30% of your Profit after the Trading Period:
               </h4>
               <h6
                 style={{
@@ -105,17 +107,28 @@ function HeroHome({ handleOpenLoginModal }) {
                 <GrCheckmark fontSize="16px" /> &nbsp; 100% Daily Predictions on
                 49ja
               </h6>
+              <h6
+                style={{
+                  display: "flex",
+                  justifyContent: "start",
+                  alignItems: "center",
+                  paddingTop: "10px",
+                  color: "black",
+                }}
+              >
+                {" "}
+                <FcCancel fontSize="16px" /> &nbsp; No more Software Sales
+              </h6>
             </p>
             <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
-              <Link>
+              <Link to="https://paystack.com/pay/reelstats49ja">
                 {" "}
                 <div data-aos="fade-up" data-aos-delay="400">
                   <a
                     className="btn text-white bg-purple-600 hover:bg-gray-200 w-full mb-4 sm:w-auto sm:mb-0"
-                    href="#0"
-                    onClick={handleOpenLoginModal}
+                    href="https://paystack.com/pay/reelstats49ja"
                   >
-                    Get Started
+                    Subscribe and Get Started
                   </a>
                 </div>
               </Link>
@@ -219,8 +232,8 @@ function HeroHome({ handleOpenLoginModal }) {
                   paddingTop: "30px",
                 }}
               >
-                For Just N45,000 Registration & 30% of your Profit In a Month
-                You'll Receive:
+                Join our autotrade with a minimum of N30,000 Registration fee &
+                30% of your Profit after the Trading Period:
               </h4>
               <h6
                 style={{
@@ -235,17 +248,28 @@ function HeroHome({ handleOpenLoginModal }) {
                 <GrCheckmark fontSize="16px" /> &nbsp; 100% Daily Predictions on
                 49ja
               </h6>
+              <h6
+                style={{
+                  display: "flex",
+                  justifyContent: "start",
+                  alignItems: "center",
+                  paddingTop: "10px",
+                  color: "black",
+                }}
+              >
+                {" "}
+                <FcCancel fontSize="16px" /> &nbsp; No more Software Sales
+              </h6>
             </p>
             <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
-              <Link>
+              <Link to="https://paystack.com/pay/reelstats49ja">
                 {" "}
                 <div data-aos="fade-up" data-aos-delay="400">
                   <a
                     className="btn text-white bg-purple-600 hover:bg-gray-200 w-full mb-4 sm:w-auto sm:mb-0"
-                    href="#0"
-                    onClick={handleOpenLoginModal}
+                    href="https://paystack.com/pay/reelstats49ja"
                   >
-                    Get Started
+                    Subscribe and Get Started
                   </a>
                 </div>
               </Link>
