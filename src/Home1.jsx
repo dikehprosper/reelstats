@@ -61,7 +61,7 @@ function Home1() {
     // go();
     setInstructions("... Loading");
 
-    const url = "http://localhost:5000/fetch-data";
+    const url = "http://137.184.115.62:5000/fetch";
     fetch(url)
       .then((response) => {
         if (!response.ok) {
