@@ -91,9 +91,22 @@ function HeroHome({ handleOpenLoginModal }) {
                   paddingTop: "30px",
                 }}
               >
-                Join our autotrade with a minimum of N30,000 Registration fee
-                and 30% of your Profit after the Trading Period:
+                With just N45,000 Registration fee and 30% of your Profit after
+                a month.
               </h4>
+              <h6
+                style={{
+                  display: "flex",
+                  justifyContent: "start",
+                  alignItems: "center",
+                  paddingTop: "10px",
+                  color: "black",
+                }}
+              >
+                {" "}
+                <GrCheckmark fontSize="16px" /> &nbsp; Full access to the
+                Prediction Software.
+              </h6>
               <h6
                 style={{
                   display: "flex",
@@ -106,18 +119,6 @@ function HeroHome({ handleOpenLoginModal }) {
                 {" "}
                 <GrCheckmark fontSize="16px" /> &nbsp; 100% Daily Predictions on
                 49ja
-              </h6>
-              <h6
-                style={{
-                  display: "flex",
-                  justifyContent: "start",
-                  alignItems: "center",
-                  paddingTop: "10px",
-                  color: "black",
-                }}
-              >
-                {" "}
-                <FcCancel fontSize="16px" /> &nbsp; No more Software Sales
               </h6>
             </p>
             <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
