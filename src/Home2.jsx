@@ -58,7 +58,7 @@ function Home1() {
     // go();
     setInstructions("... Loading");
 
-    const url = "http://137.184.115.62:5000/fetch";
+    const url = "http://localhost:5000/fetch";
     fetch(url)
       .then((response) => {
         if (!response.ok) {
@@ -87,25 +87,21 @@ function Home1() {
   };
 
   function go() {
-    if (secondElement.length < 1) {
-      return null;
-    } else {
-      return (
-        <Typewriter
-          onInit={(typewriter) => {
-            typewriter
-              .typeString("Bet on")
-              .callFunction(() => {
-                {
-                  pickRandomNumbers();
-                  // findFrequentNumbers2();
-                }
-              })
-              .start();
-          }}
-        />
-      );
-    }
+    return (
+      <Typewriter
+        onInit={(typewriter) => {
+          typewriter
+            .typeString("Bet on")
+            .callFunction(() => {
+              {
+                pickRandomNumbers();
+                // findFrequentNumbers2();
+              }
+            })
+            .start();
+        }}
+      />
+    );
   }
 
   const pickRandomNumbers = () => {
@@ -307,7 +303,7 @@ console.log(frequentNumbers);
             <div className="draw"> {firstElement + 1}</div>
           </div>
         </div>
-        <button className="mainbody5" onClick={getDownloads}>
+        <button className="mainbody5" onClick={go}>
           Click To Start
         </button>
         <div className="mainbody1">

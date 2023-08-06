@@ -61,7 +61,7 @@ function Home1() {
     // go();
     setInstructions("... Loading");
 
-    const url = "http://137.184.115.62:5000/fetch";
+    const url = "http://localhost:5000/fetch";
     fetch(url)
       .then((response) => {
         if (!response.ok) {
@@ -217,9 +217,8 @@ console.log(frequentNumbers);
               Last Draw : &nbsp;&nbsp;&nbsp;&nbsp;
             </div>{" "}
             <div className="draw">
-               {/* {instructions2}  */}
+              {/* {instructions2}  */}
               {firstElement - 1}
-       
             </div>
             <div className="body6">
               {firstSixElement &&
@@ -308,8 +307,7 @@ console.log(frequentNumbers);
             <div className="mainbody1-2">
               Upcoming Draw : &nbsp;&nbsp;&nbsp;&nbsp;
             </div>{" "}
-            <div className="draw"> {firstElement}
-            </div>
+            <div className="draw"> {firstElement}</div>
           </div>
         </div>
         <button className="mainbody5" onClick={getDownloads}>
