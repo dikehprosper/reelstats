@@ -77,63 +77,13 @@ function HeroHome({ handleOpenLoginModal }) {
                   textTransform: "uppercase",
                 }}
               >
-                We use <span style={{ color: "black" }}>AI</span> to study and
-                immitate the algorithm behind the{" "}
+                learn to <span style={{ color: "black" }}>trade</span>{" "}
                 <span style={{ color: "red" }}>49</span>
-                <span style={{ color: "green" }}>ja</span> Color games and with
-                proper timing the software is able to predict a perfect 1.65 odd
-                game just once a day.
+                <span style={{ color: "green" }}>ja</span> ,from premium
+                strategies, to risk management, to time management, Capital
+                management and many more.
               </div>
-              <h4
-                style={{
-                  color: "black",
-                  fontWeight: "bold",
-                  paddingTop: "30px",
-                }}
-              >
-                With just N45,000 Registration fee and 30% of your Profit after
-                a month.
-              </h4>
-              <h6
-                style={{
-                  display: "flex",
-                  justifyContent: "start",
-                  alignItems: "center",
-                  paddingTop: "10px",
-                  color: "black",
-                }}
-              >
-                {" "}
-                <GrCheckmark fontSize="16px" /> &nbsp; Full access to the
-                Prediction Software.
-              </h6>
-              <h6
-                style={{
-                  display: "flex",
-                  justifyContent: "start",
-                  alignItems: "center",
-                  paddingTop: "10px",
-                  color: "black",
-                }}
-              >
-                {" "}
-                <GrCheckmark fontSize="16px" /> &nbsp; 100% Daily Predictions on
-                49ja
-              </h6>
             </p>
-            <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
-              <Link to="https://paystack.com/pay/reelstats49ja">
-                {" "}
-                <div data-aos="fade-up" data-aos-delay="400">
-                  <a
-                    className="btn text-white bg-purple-600 hover:bg-gray-200 w-full mb-4 sm:w-auto sm:mb-0"
-                    href="https://paystack.com/pay/reelstats49ja"
-                  >
-                    Subscribe and Get Started
-                  </a>
-                </div>
-              </Link>
-            </div>
           </div>
 
           {/* Hero image */}
@@ -211,7 +161,7 @@ function HeroHome({ handleOpenLoginModal }) {
                 paddingTop: "30px",
               }}
             >
-               <div
+              <div
                 style={{
                   color: "#4A95CF",
                   fontWeight: "bold",
@@ -219,63 +169,335 @@ function HeroHome({ handleOpenLoginModal }) {
                   textTransform: "uppercase",
                 }}
               >
-                We use <span style={{ color: "black" }}>AI</span> to study and
-                immitate the algorithm behind the{" "}
+                learn to <span style={{ color: "black" }}>trade</span>{" "}
                 <span style={{ color: "red" }}>49</span>
-                <span style={{ color: "green" }}>ja</span> Color games and with
-                proper timing the software is able to predict a perfect 1.65 odd
-                game just once a day.
+                <span style={{ color: "green" }}>ja</span> , like a PRO.From
+                premium strategies, to risk management, to time management,
+                Capital management and many more.
               </div>
-              <h4
-                style={{
-                  color: "black",
-                  fontWeight: "bold",
-                  paddingTop: "30px",
-                }}
-              >
-                With just N45,000 Registration fee and 30% of your Profit after
-                a month.
-              </h4>
-              <h6
-                style={{
-                  display: "flex",
-                  justifyContent: "start",
-                  alignItems: "center",
-                  paddingTop: "10px",
-                  color: "black",
-                }}
-              >
-                {" "}
-                <GrCheckmark fontSize="16px" /> &nbsp; Full access to the
-                Prediction Software.
-              </h6>
-              <h6
-                style={{
-                  display: "flex",
-                  justifyContent: "start",
-                  alignItems: "center",
-                  paddingTop: "10px",
-                  color: "black",
-                }}
-              >
-                {" "}
-                <GrCheckmark fontSize="16px" /> &nbsp; 100% Daily Predictions on
-                49ja
-              </h6>
             </p>
-            <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
-              <Link to="https://paystack.com/pay/reelstats49ja">
-                {" "}
-                <div data-aos="fade-up" data-aos-delay="400">
-                  <a
-                    className="btn text-white bg-purple-600 hover:bg-gray-200 w-full mb-4 sm:w-auto sm:mb-0"
-                    href="https://paystack.com/pay/reelstats49ja"
-                  >
-                    Subscribe and Get Started
-                  </a>
-                </div>
-              </Link>
-            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="smaller-devices">
+        <div
+          style={{
+            width: "80%",
+            height: "100%",
+            display: "flex",
+            justifyContent: "start",
+            flexDirection: "column",
+            alignItems: "start",
+            border: "2px solid grey",
+            borderRadius: "40px",
+            padding: "20px",
+            fontWeight: "bold",
+          }}
+        >
+          <div
+            style={{
+              fontWeight: "600",
+              fontSize: "30px",
+              color: "black",
+              display: "flex",
+              justifyContent: "center",
+              flexDirection: "column",
+            }}
+          >
+            1-Month-Subsciption <br />
+            (N60,000)
+          </div>
+          <p>Includes:</p>
+          <h6
+            style={{
+              display: "flex",
+              justifyContent: "start",
+              alignItems: "center",
+              paddingTop: "10px",
+              color: "black",
+            }}
+          >
+            {" "}
+            <GrCheckmark fontSize="16px" /> &nbsp; How you can create Premium
+            Strategies
+          </h6>
+          <h6
+            style={{
+              display: "flex",
+              justifyContent: "start",
+              alignItems: "center",
+              paddingTop: "10px",
+              color: "black",
+            }}
+          >
+            {" "}
+            <GrCheckmark fontSize="16px" /> &nbsp; Understanding Risk Management
+          </h6>
+          <h6
+            style={{
+              display: "flex",
+              justifyContent: "start",
+              alignItems: "center",
+              paddingTop: "10px",
+              color: "black",
+            }}
+          >
+            {" "}
+            <GrCheckmark fontSize="16px" /> &nbsp; Understanding capital
+            Management
+          </h6>
+          <h6
+            style={{
+              display: "flex",
+              justifyContent: "start",
+              alignItems: "center",
+              paddingTop: "10px",
+              color: "black",
+              marginBottom: "104px",
+            }}
+          >
+            {" "}
+            <GrCheckmark fontSize="16px" /> &nbsp; Understanding Time Management
+          </h6>
+          <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-start">
+            <Link to="https://paystack.com/pay/reelstats49ja-1-month">
+              {" "}
+              <div data-aos="fade-up" data-aos-delay="400">
+                <a
+                  className="btn text-white bg-purple-600 hover:bg-gray-200 w-full mb-4 sm:w-auto sm:mb-0"
+                  href="https://paystack.com/pay/reelstats49ja-1-month"
+                >
+                  Subscribe
+                </a>
+              </div>
+            </Link>
+          </div>
+        </div>
+        <div
+          style={{
+            width: "80%",
+            height: "100%",
+            display: "flex",
+            justifyContent: "start",
+            flexDirection: "column",
+            alignItems: "start",
+            border: "2px solid grey",
+            borderRadius: "40px",
+            padding: "20px",
+            fontWeight: "bold",
+          }}
+        >
+          <div
+            style={{
+              fontWeight: "600",
+              fontSize: "30px",
+              color: "black",
+              display: "flex",
+              justifyContent: "center",
+              flexDirection: "column",
+            }}
+          >
+            6-Month-Subsciption <br />
+            (N80,000)
+          </div>
+          <p>Includes:</p>
+          <h6
+            style={{
+              display: "flex",
+              justifyContent: "start",
+              alignItems: "center",
+              paddingTop: "10px",
+              color: "black",
+            }}
+          >
+            {" "}
+            <GrCheckmark fontSize="16px" /> &nbsp; How you can create Premium
+            Strategies
+          </h6>
+          <h6
+            style={{
+              display: "flex",
+              justifyContent: "start",
+              alignItems: "center",
+              paddingTop: "10px",
+              color: "black",
+            }}
+          >
+            {" "}
+            <GrCheckmark fontSize="16px" /> &nbsp; Understanding Risk Management
+          </h6>
+          <h6
+            style={{
+              display: "flex",
+              justifyContent: "start",
+              alignItems: "center",
+              paddingTop: "10px",
+              color: "black",
+            }}
+          >
+            {" "}
+            <GrCheckmark fontSize="16px" /> &nbsp; Understanding capital
+            Management
+          </h6>
+          <h6
+            style={{
+              display: "flex",
+              justifyContent: "start",
+              alignItems: "center",
+              paddingTop: "10px",
+              color: "black",
+            }}
+          >
+            {" "}
+            <GrCheckmark fontSize="16px" /> &nbsp; Understanding Time Management
+          </h6>
+          <h6
+            style={{
+              display: "flex",
+              justifyContent: "start",
+              alignItems: "center",
+              paddingTop: "10px",
+              color: "black",
+              marginBottom: "70px",
+            }}
+          >
+            {" "}
+            <GrCheckmark fontSize="16px" /> &nbsp; access to my updated
+            strategies
+          </h6>
+          <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-start">
+            <Link to="https://paystack.com/pay/reelstats49ja-6-months">
+              {" "}
+              <div data-aos="fade-up" data-aos-delay="400">
+                <a
+                  className="btn text-white bg-purple-600 hover:bg-gray-200 w-full mb-4 sm:w-auto sm:mb-0"
+                  href="https://paystack.com/pay/reelstats49ja-6-months"
+                >
+                  Subscribe
+                </a>
+              </div>
+            </Link>
+          </div>
+        </div>
+
+        <div
+          style={{
+            width: "80%",
+            height: "100%",
+            display: "flex",
+            justifyContent: "start",
+            flexDirection: "column",
+            alignItems: "start",
+            border: "2px solid grey",
+            borderRadius: "40px",
+            padding: "20px",
+            fontWeight: "bold",
+          }}
+        >
+          <div
+            style={{
+              fontWeight: "600",
+              fontSize: "30px",
+              color: "black",
+              display: "flex",
+              justifyContent: "center",
+              flexDirection: "column",
+            }}
+          >
+            1-Year-Subsciption <br />
+            (N100,000)
+          </div>
+          <p>Includes:</p>
+          <h6
+            style={{
+              display: "flex",
+              justifyContent: "start",
+              alignItems: "center",
+              paddingTop: "10px",
+              color: "black",
+            }}
+          >
+            {" "}
+            <GrCheckmark fontSize="16px" /> &nbsp; How you can create Premium
+            Strategies
+          </h6>
+          <h6
+            style={{
+              display: "flex",
+              justifyContent: "start",
+              alignItems: "center",
+              paddingTop: "10px",
+              color: "black",
+            }}
+          >
+            {" "}
+            <GrCheckmark fontSize="16px" /> &nbsp; Understanding Risk Management
+          </h6>
+          <h6
+            style={{
+              display: "flex",
+              justifyContent: "start",
+              alignItems: "center",
+              paddingTop: "10px",
+              color: "black",
+            }}
+          >
+            {" "}
+            <GrCheckmark fontSize="16px" /> &nbsp; Understanding capital
+            Management
+          </h6>
+          <h6
+            style={{
+              display: "flex",
+              justifyContent: "start",
+              alignItems: "center",
+              paddingTop: "10px",
+              color: "black",
+            }}
+          >
+            {" "}
+            <GrCheckmark fontSize="16px" /> &nbsp; Understanding Time Management
+          </h6>
+          <h6
+            style={{
+              display: "flex",
+              justifyContent: "start",
+              alignItems: "center",
+              paddingTop: "10px",
+              color: "black",
+            }}
+          >
+            {" "}
+            <GrCheckmark fontSize="16px" /> &nbsp; access to my updated
+            strategies
+          </h6>
+          <h6
+            style={{
+              display: "flex",
+              justifyContent: "start",
+              alignItems: "center",
+              paddingTop: "10px",
+              color: "black",
+              marginBottom: "36px",
+            }}
+          >
+            {" "}
+            <GrCheckmark fontSize="16px" /> &nbsp; Mentorship including
+            one-on-one calls
+          </h6>
+          <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-start">
+            <Link to="https://paystack.com/pay/reelstats-1-year">
+              {" "}
+              <div data-aos="fade-up" data-aos-delay="400">
+                <a
+                  className="btn text-white bg-purple-600 hover:bg-gray-200 w-full mb-4 sm:w-auto sm:mb-0"
+                  href="https://paystack.com/pay/reelstats-1-year"
+                >
+                  Subscribe
+                </a>
+              </div>
+            </Link>
           </div>
         </div>
       </div>

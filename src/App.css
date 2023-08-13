@@ -26,6 +26,31 @@
 
 }
 
+  .smaller-devices {
+           display: flex;
+              height: 450px;
+              width:  auto;
+              margin-top: 40px;
+              justify-content: center;
+              flex: 1;
+              gap: 10px;
+              padding: 0px 50px 0px 50px;
+       
+  }
+
+@media screen and (max-width:760px){
+    .smaller-devices {
+        margin-top: 20px;
+        height: auto;
+            flex-direction: column;
+            align-items: center;
+            padding: 0px 20px 0px 20px;
+            gap: 10px;
+
+        }
+}
+
+
 .inputBox span {
     position: absolute;
     left: 0;

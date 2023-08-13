@@ -63,7 +63,7 @@ function FeaturesZigzag() {
                       <h4>
                         {" "}
                         At this stage we would start off with a bigger
-                        challenge. N500,000 to N50,000,000.
+                        challenge. N500,000 to N30,000,000.
                       </h4>
                     </li>
                   </ul>
