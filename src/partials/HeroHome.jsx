@@ -169,11 +169,11 @@ function HeroHome({ handleOpenLoginModal }) {
                   textTransform: "uppercase",
                 }}
               >
-                learn to <span style={{ color: "black" }}>trade</span>{" "}
+                 learn to <span style={{ color: "black" }}>trade</span>{" "}
                 <span style={{ color: "red" }}>49</span>
-                <span style={{ color: "green" }}>ja</span> , like a PRO.From
-                premium strategies, to risk management, to time management,
-                Capital management and many more.
+                <span style={{ color: "green" }}>ja</span> ,from premium
+                strategies, to risk management, to time management, Capital
+                management and many more.
               </div>
             </p>
           </div>
