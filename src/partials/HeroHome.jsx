@@ -169,7 +169,7 @@ function HeroHome({ handleOpenLoginModal }) {
                   textTransform: "uppercase",
                 }}
               >
-                 learn to <span style={{ color: "black" }}>trade</span>{" "}
+                learn to <span style={{ color: "black" }}>trade</span>{" "}
                 <span style={{ color: "red" }}>49</span>
                 <span style={{ color: "green" }}>ja</span> ,from premium
                 strategies, to risk management, to time management, Capital
@@ -197,12 +197,11 @@ function HeroHome({ handleOpenLoginModal }) {
         >
           <div
             style={{
-              fontWeight: "600",
-              fontSize: "30px",
+              fontWeight: "bolder",
+              fontSize: "20px",
               color: "black",
               display: "flex",
               justifyContent: "center",
-              flexDirection: "column",
             }}
           >
             1-Month-Subsciption <br />
@@ -290,12 +289,11 @@ function HeroHome({ handleOpenLoginModal }) {
         >
           <div
             style={{
-              fontWeight: "600",
-              fontSize: "30px",
+              fontWeight: "bolder",
+              fontSize: "20px",
               color: "black",
               display: "flex",
               justifyContent: "center",
-              flexDirection: "column",
             }}
           >
             6-Month-Subsciption <br />
@@ -397,12 +395,11 @@ function HeroHome({ handleOpenLoginModal }) {
         >
           <div
             style={{
-              fontWeight: "600",
-              fontSize: "30px",
+              fontWeight: "bolder",
+              fontSize: "20px",
               color: "black",
               display: "flex",
               justifyContent: "center",
-              flexDirection: "column",
             }}
           >
             1-Year-Subsciption <br />
