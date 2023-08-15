@@ -77,13 +77,35 @@ function HeroHome({ handleOpenLoginModal }) {
                   textTransform: "uppercase",
                 }}
               >
-                learn to <span style={{ color: "black" }}>trade</span>{" "}
+                We use <span style={{ color: "black" }}>AI</span> to study and
+                immitate the algorithm behind the{" "}
+                <span style={{ color: "red" }}>49</span>
+                <span style={{ color: "green" }}>ja</span> Color games and with
+                proper timing the software is able to predict a perfect 1.65 odd
+                game just once a day.
+                {/* learn to <span style={{ color: "black" }}>trade</span>{" "}
                 <span style={{ color: "red" }}>49</span>
                 <span style={{ color: "green" }}>ja</span> ,from premium
                 strategies, to risk management, to time management, Capital
-                management and many more.
+                management and many more. */}
               </div>
             </p>
+            <div
+              className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-start"
+              onClick={handleOpenLoginModal}
+            >
+              <Link to="">
+                {" "}
+                <div data-aos="fade-up" data-aos-delay="400">
+                  <a
+                    className="btn text-white bg-purple-600 hover:bg-gray-200 w-full mb-4 sm:w-auto sm:mb-0"
+                    href=""
+                  >
+                    Subscribe
+                  </a>
+                </div>
+              </Link>
+            </div>
           </div>
 
           {/* Hero image */}
@@ -169,18 +191,40 @@ function HeroHome({ handleOpenLoginModal }) {
                   textTransform: "uppercase",
                 }}
               >
-                learn to <span style={{ color: "black" }}>trade</span>{" "}
+                We use <span style={{ color: "black" }}>AI</span> to study and
+                immitate the algorithm behind the{" "}
+                <span style={{ color: "red" }}>49</span>
+                <span style={{ color: "green" }}>ja</span> Color games and with
+                proper timing the software is able to predict a perfect 1.65 odd
+                game just once a day.
+                {/* learn to <span style={{ color: "black" }}>trade</span>{" "}
                 <span style={{ color: "red" }}>49</span>
                 <span style={{ color: "green" }}>ja</span> ,from premium
                 strategies, to risk management, to time management, Capital
-                management and many more.
+                management and many more. */}
               </div>
             </p>
+            <div
+              className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-start"
+              onClick={handleOpenLoginModal}
+            >
+              <Link to="">
+                {" "}
+                <div data-aos="fade-up" data-aos-delay="400">
+                  <a
+                    className="btn text-white bg-purple-600 hover:bg-gray-200 w-full mb-4 sm:w-auto sm:mb-0"
+                    href=""
+                  >
+                    Subscribe
+                  </a>
+                </div>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
 
-      <div className="smaller-devices">
+      {/* <div className="smaller-devices">
         <div
           style={{
             width: "80%",
@@ -497,7 +541,7 @@ function HeroHome({ handleOpenLoginModal }) {
             </Link>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }
